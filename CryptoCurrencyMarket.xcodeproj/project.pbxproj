@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		5FB621A523A7741B009EEC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB621A323A7741B009EEC05 /* LaunchScreen.storyboard */; };
 		5FB621B023A7741B009EEC05 /* CryptoCurrencyMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621AF23A7741B009EEC05 /* CryptoCurrencyMarketTests.swift */; };
 		5FB621BB23A7741B009EEC05 /* CryptoCurrencyMarketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621BA23A7741B009EEC05 /* CryptoCurrencyMarketUITests.swift */; };
+		5FB621CB23A7E557009EEC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB621CA23A7E556009EEC05 /* Main.storyboard */; };
+		5FB621D023A7E656009EEC05 /* GeneralTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621CF23A7E656009EEC05 /* GeneralTabViewController.swift */; };
+		5FB621D223A86919009EEC05 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621D123A86919009EEC05 /* BooksViewController.swift */; };
+		5FB621D423A86A02009EEC05 /* TickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621D323A86A02009EEC05 /* TickersViewController.swift */; };
+		5FB621D623A86A18009EEC05 /* TradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621D523A86A18009EEC05 /* TradesViewController.swift */; };
 		B54700C7EF5D6F7D925E3A81 /* Pods_CryptoCurrencyMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFA0E62DE1862E0C398C955 /* Pods_CryptoCurrencyMarket.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,11 @@
 		5FB621B623A7741B009EEC05 /* CryptoCurrencyMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoCurrencyMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB621BA23A7741B009EEC05 /* CryptoCurrencyMarketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyMarketUITests.swift; sourceTree = "<group>"; };
 		5FB621BC23A7741B009EEC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB621CA23A7E556009EEC05 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5FB621CF23A7E656009EEC05 /* GeneralTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralTabViewController.swift; path = ViewController/GeneralTabViewController.swift; sourceTree = "<group>"; };
+		5FB621D123A86919009EEC05 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BooksViewController.swift; path = ViewController/BooksViewController.swift; sourceTree = "<group>"; };
+		5FB621D323A86A02009EEC05 /* TickersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TickersViewController.swift; path = ViewController/TickersViewController.swift; sourceTree = "<group>"; };
+		5FB621D523A86A18009EEC05 /* TradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TradesViewController.swift; path = ViewController/TradesViewController.swift; sourceTree = "<group>"; };
 		BEFA0E62DE1862E0C398C955 /* Pods_CryptoCurrencyMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoCurrencyMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCFA0FC3213782D4A61735D /* Pods-CryptoCurrencyMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrencyMarket.release.xcconfig"; path = "Target Support Files/Pods-CryptoCurrencyMarket/Pods-CryptoCurrencyMarket.release.xcconfig"; sourceTree = "<group>"; };
 		C6B7A2B0FA8075CDE6A0CE85 /* Pods-CryptoCurrencyMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrencyMarket.debug.xcconfig"; path = "Target Support Files/Pods-CryptoCurrencyMarket/Pods-CryptoCurrencyMarket.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,11 +116,13 @@
 		5FB6219723A77419009EEC05 /* CryptoCurrencyMarket */ = {
 			isa = PBXGroup;
 			children = (
+				5FB621CE23A7E619009EEC05 /* ViewController */,
 				5FB6219823A77419009EEC05 /* AppDelegate.swift */,
 				5FB6219A23A77419009EEC05 /* SceneDelegate.swift */,
 				5FB6219C23A77419009EEC05 /* ContentView.swift */,
 				5FB6219E23A7741B009EEC05 /* Assets.xcassets */,
 				5FB621A323A7741B009EEC05 /* LaunchScreen.storyboard */,
+				5FB621CA23A7E556009EEC05 /* Main.storyboard */,
 				5FB621A623A7741B009EEC05 /* Info.plist */,
 				5FB621A023A7741B009EEC05 /* Preview Content */,
 			);
@@ -143,13 +155,23 @@
 			path = CryptoCurrencyMarketUITests;
 			sourceTree = "<group>";
 		};
+		5FB621CE23A7E619009EEC05 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5FB621CF23A7E656009EEC05 /* GeneralTabViewController.swift */,
+				5FB621D123A86919009EEC05 /* BooksViewController.swift */,
+				5FB621D323A86A02009EEC05 /* TickersViewController.swift */,
+				5FB621D523A86A18009EEC05 /* TradesViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		7A8CD31E3599AD7DCED9E126 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C6B7A2B0FA8075CDE6A0CE85 /* Pods-CryptoCurrencyMarket.debug.xcconfig */,
 				BFCFA0FC3213782D4A61735D /* Pods-CryptoCurrencyMarket.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -270,6 +292,7 @@
 				5FB621A523A7741B009EEC05 /* LaunchScreen.storyboard in Resources */,
 				5FB621A223A7741B009EEC05 /* Preview Assets.xcassets in Resources */,
 				5FB6219F23A7741B009EEC05 /* Assets.xcassets in Resources */,
+				5FB621CB23A7E557009EEC05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +359,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB621D223A86919009EEC05 /* BooksViewController.swift in Sources */,
+				5FB621D623A86A18009EEC05 /* TradesViewController.swift in Sources */,
 				5FB6219923A77419009EEC05 /* AppDelegate.swift in Sources */,
+				5FB621D423A86A02009EEC05 /* TickersViewController.swift in Sources */,
+				5FB621D023A7E656009EEC05 /* GeneralTabViewController.swift in Sources */,
 				5FB6219B23A77419009EEC05 /* SceneDelegate.swift in Sources */,
 				5FB6219D23A77419009EEC05 /* ContentView.swift in Sources */,
 			);

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D2X-3A-r54">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9J5-zn-mpv">
+            <objects>
+                <navigationController id="D2X-3A-r54" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ghq-Hz-yo2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I50-kZ-Wuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1839" y="-731"/>
+        </scene>
+        <!--Market-->
+        <scene sceneID="5cp-qQ-nWc">
+            <objects>
+                <viewController storyboardIdentifier="TickersViewController" title="Market" id="2aJ-2j-I1z" customClass="TickersViewController" customModule="CryptoCurrencyMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="th8-0A-jgQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="K1H-pZ-2Wd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Market" id="YQw-n3-JUc" customClass="Price"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OwA-X7-0xB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1155" y="3"/>
+        </scene>
+        <!--Books-->
+        <scene sceneID="V0Z-AN-zeF">
+            <objects>
+                <viewController storyboardIdentifier="BooksViewController" title="Books" id="NYg-Fl-Y9p" customClass="BooksViewController" customModule="CryptoCurrencyMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YcM-8I-0Wl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VpU-od-Rin"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Portforlio" id="RDf-Wl-aj7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQX-1G-GM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468" y="3"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="N9q-Xx-3GA">
+            <objects>
+                <tabBarController id="lyJ-GU-UwX" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="THi-lC-5SA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NYg-Fl-Y9p" kind="relationship" relationship="viewControllers" id="SI4-vL-ixI"/>
+                        <segue destination="2aJ-2j-I1z" kind="relationship" relationship="viewControllers" id="c2x-TM-nF4"/>
+                        <segue destination="Hel-Ou-Dcz" kind="relationship" relationship="viewControllers" id="Vd4-ca-S2V"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPc-Dj-M1I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1154" y="-731"/>
+        </scene>
+        <!--Trading-->
+        <scene sceneID="ost-06-5dm">
+            <objects>
+                <viewController storyboardIdentifier="TradesViewController" title="Trading" id="Hel-Ou-Dcz" customClass="TradesViewController" customModule="CryptoCurrencyMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xbU-ok-KcZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ppn-09-N7L"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trading" id="J5M-PO-Vue"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2M2-8V-hLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1839" y="3"/>
+        </scene>
+    </scenes>
+</document>
