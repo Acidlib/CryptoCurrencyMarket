@@ -21,6 +21,10 @@
 		5FB621D423A86A02009EEC05 /* TickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621D323A86A02009EEC05 /* TickersViewController.swift */; };
 		5FB621D623A86A18009EEC05 /* TradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621D523A86A18009EEC05 /* TradesViewController.swift */; };
 		5FB621D923A8760E009EEC05 /* CCStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621D823A8760E009EEC05 /* CCStoryboard.swift */; };
+		5FB621DB23A87D17009EEC05 /* CCWebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621DA23A87D17009EEC05 /* CCWebSocketClient.swift */; };
+		5FB621E223A88131009EEC05 /* CCMAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621E123A88131009EEC05 /* CCMAPIRequest.swift */; };
+		5FB621E623A88239009EEC05 /* CCMQueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621E523A88239009EEC05 /* CCMQueryResponse.swift */; };
+		5FB621E823A88256009EEC05 /* CCMQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621E723A88256009EEC05 /* CCMQueryRequest.swift */; };
 		B54700C7EF5D6F7D925E3A81 /* Pods_CryptoCurrencyMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFA0E62DE1862E0C398C955 /* Pods_CryptoCurrencyMarket.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +66,10 @@
 		5FB621D323A86A02009EEC05 /* TickersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TickersViewController.swift; path = ViewController/TickersViewController.swift; sourceTree = "<group>"; };
 		5FB621D523A86A18009EEC05 /* TradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TradesViewController.swift; path = ViewController/TradesViewController.swift; sourceTree = "<group>"; };
 		5FB621D823A8760E009EEC05 /* CCStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCStoryboard.swift; sourceTree = "<group>"; };
+		5FB621DA23A87D17009EEC05 /* CCWebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWebSocketClient.swift; sourceTree = "<group>"; };
+		5FB621E123A88131009EEC05 /* CCMAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMAPIRequest.swift; sourceTree = "<group>"; };
+		5FB621E523A88239009EEC05 /* CCMQueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMQueryResponse.swift; sourceTree = "<group>"; };
+		5FB621E723A88256009EEC05 /* CCMQueryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMQueryRequest.swift; sourceTree = "<group>"; };
 		BEFA0E62DE1862E0C398C955 /* Pods_CryptoCurrencyMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoCurrencyMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCFA0FC3213782D4A61735D /* Pods-CryptoCurrencyMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrencyMarket.release.xcconfig"; path = "Target Support Files/Pods-CryptoCurrencyMarket/Pods-CryptoCurrencyMarket.release.xcconfig"; sourceTree = "<group>"; };
 		C6B7A2B0FA8075CDE6A0CE85 /* Pods-CryptoCurrencyMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrencyMarket.debug.xcconfig"; path = "Target Support Files/Pods-CryptoCurrencyMarket/Pods-CryptoCurrencyMarket.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,8 +181,36 @@
 		5FB621D723A871AB009EEC05 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5FB621E023A88122009EEC05 /* API */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		5FB621E023A88122009EEC05 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5FB621E123A88131009EEC05 /* CCMAPIRequest.swift */,
+				5FB621DA23A87D17009EEC05 /* CCWebSocketClient.swift */,
+				5FB621E423A88210009EEC05 /* Response */,
+				5FB621E323A88208009EEC05 /* Request */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5FB621E323A88208009EEC05 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				5FB621E723A88256009EEC05 /* CCMQueryRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		5FB621E423A88210009EEC05 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5FB621E523A88239009EEC05 /* CCMQueryResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		7A8CD31E3599AD7DCED9E126 /* Pods */ = {
@@ -370,13 +406,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB621E823A88256009EEC05 /* CCMQueryRequest.swift in Sources */,
 				5FB621D223A86919009EEC05 /* BooksViewController.swift in Sources */,
 				5FB621D623A86A18009EEC05 /* TradesViewController.swift in Sources */,
 				5FB6219923A77419009EEC05 /* AppDelegate.swift in Sources */,
 				5FB621D423A86A02009EEC05 /* TickersViewController.swift in Sources */,
 				5FB621D923A8760E009EEC05 /* CCStoryboard.swift in Sources */,
+				5FB621DB23A87D17009EEC05 /* CCWebSocketClient.swift in Sources */,
 				5FB621D023A7E656009EEC05 /* GeneralTabViewController.swift in Sources */,
 				5FB6219B23A77419009EEC05 /* SceneDelegate.swift in Sources */,
+				5FB621E623A88239009EEC05 /* CCMQueryResponse.swift in Sources */,
+				5FB621E223A88131009EEC05 /* CCMAPIRequest.swift in Sources */,
 				5FB6219D23A77419009EEC05 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
