@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F234AB923AA89A6000DEFF2 /* CCMConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F234AB823AA89A6000DEFF2 /* CCMConstant.swift */; };
 		5FB6219923A77419009EEC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6219823A77419009EEC05 /* AppDelegate.swift */; };
 		5FB6219B23A77419009EEC05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6219A23A77419009EEC05 /* SceneDelegate.swift */; };
 		5FB6219D23A77419009EEC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6219C23A77419009EEC05 /* ContentView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F234AB823AA89A6000DEFF2 /* CCMConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMConstant.swift; sourceTree = "<group>"; };
 		5FB6219523A77419009EEC05 /* CryptoCurrencyMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCurrencyMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB6219823A77419009EEC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB6219A23A77419009EEC05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		5FB621E023A88122009EEC05 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				5F234AB823AA89A6000DEFF2 /* CCMConstant.swift */,
 				5FB621E123A88131009EEC05 /* CCMAPIRequest.swift */,
 				5FB621DA23A87D17009EEC05 /* CCWebSocketClient.swift */,
 				5FB621E423A88210009EEC05 /* Response */,
@@ -417,6 +420,7 @@
 				5FB6219B23A77419009EEC05 /* SceneDelegate.swift in Sources */,
 				5FB621E623A88239009EEC05 /* CCMQueryResponse.swift in Sources */,
 				5FB621E223A88131009EEC05 /* CCMAPIRequest.swift in Sources */,
+				5F234AB923AA89A6000DEFF2 /* CCMConstant.swift in Sources */,
 				5FB6219D23A77419009EEC05 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
