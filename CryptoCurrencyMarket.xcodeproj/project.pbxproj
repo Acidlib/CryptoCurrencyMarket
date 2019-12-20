@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5F234AB923AA89A6000DEFF2 /* CCMConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F234AB823AA89A6000DEFF2 /* CCMConstant.swift */; };
+		5F4337A323AD0DF900C38255 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4337A223AD0DF900C38255 /* TradeViewController.swift */; };
+		5F4337A523AD0E0200C38255 /* TickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4337A423AD0E0200C38255 /* TickerViewController.swift */; };
+		5FA8CC7823AD09D700C65F71 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8CC7723AD09D700C65F71 /* BookViewController.swift */; };
+		5FA8CC7E23AD0A2600C65F71 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8CC7D23AD0A2600C65F71 /* BookViewModel.swift */; };
+		5FA8CC8023AD0A3700C65F71 /* TradeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8CC7F23AD0A3700C65F71 /* TradeViewModel.swift */; };
+		5FA8CC8223AD0A4100C65F71 /* TickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8CC8123AD0A4100C65F71 /* TickerViewModel.swift */; };
+		5FA8CC8523AD0AA500C65F71 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8CC8423AD0AA500C65F71 /* UIStoryboard.swift */; };
 		5FB6219923A77419009EEC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6219823A77419009EEC05 /* AppDelegate.swift */; };
 		5FB6219B23A77419009EEC05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6219A23A77419009EEC05 /* SceneDelegate.swift */; };
 		5FB6219D23A77419009EEC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6219C23A77419009EEC05 /* ContentView.swift */; };
@@ -18,9 +25,6 @@
 		5FB621BB23A7741B009EEC05 /* CryptoCurrencyMarketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621BA23A7741B009EEC05 /* CryptoCurrencyMarketUITests.swift */; };
 		5FB621CB23A7E557009EEC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB621CA23A7E556009EEC05 /* Main.storyboard */; };
 		5FB621D023A7E656009EEC05 /* GeneralTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621CF23A7E656009EEC05 /* GeneralTabViewController.swift */; };
-		5FB621D223A86919009EEC05 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621D123A86919009EEC05 /* BooksViewController.swift */; };
-		5FB621D423A86A02009EEC05 /* TickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621D323A86A02009EEC05 /* TickersViewController.swift */; };
-		5FB621D623A86A18009EEC05 /* TradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621D523A86A18009EEC05 /* TradesViewController.swift */; };
 		5FB621D923A8760E009EEC05 /* CCStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621D823A8760E009EEC05 /* CCStoryboard.swift */; };
 		5FB621DB23A87D17009EEC05 /* CCWebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621DA23A87D17009EEC05 /* CCWebSocketClient.swift */; };
 		5FB621E223A88131009EEC05 /* CCMAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621E123A88131009EEC05 /* CCMAPIRequest.swift */; };
@@ -48,6 +52,13 @@
 
 /* Begin PBXFileReference section */
 		5F234AB823AA89A6000DEFF2 /* CCMConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMConstant.swift; sourceTree = "<group>"; };
+		5F4337A223AD0DF900C38255 /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
+		5F4337A423AD0E0200C38255 /* TickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewController.swift; sourceTree = "<group>"; };
+		5FA8CC7723AD09D700C65F71 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		5FA8CC7D23AD0A2600C65F71 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		5FA8CC7F23AD0A3700C65F71 /* TradeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewModel.swift; sourceTree = "<group>"; };
+		5FA8CC8123AD0A4100C65F71 /* TickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewModel.swift; sourceTree = "<group>"; };
+		5FA8CC8423AD0AA500C65F71 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		5FB6219523A77419009EEC05 /* CryptoCurrencyMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCurrencyMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB6219823A77419009EEC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB6219A23A77419009EEC05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,10 +74,7 @@
 		5FB621BA23A7741B009EEC05 /* CryptoCurrencyMarketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyMarketUITests.swift; sourceTree = "<group>"; };
 		5FB621BC23A7741B009EEC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FB621CA23A7E556009EEC05 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5FB621CF23A7E656009EEC05 /* GeneralTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralTabViewController.swift; path = ViewController/GeneralTabViewController.swift; sourceTree = "<group>"; };
-		5FB621D123A86919009EEC05 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BooksViewController.swift; path = ViewController/BooksViewController.swift; sourceTree = "<group>"; };
-		5FB621D323A86A02009EEC05 /* TickersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TickersViewController.swift; path = ViewController/TickersViewController.swift; sourceTree = "<group>"; };
-		5FB621D523A86A18009EEC05 /* TradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TradesViewController.swift; path = ViewController/TradesViewController.swift; sourceTree = "<group>"; };
+		5FB621CF23A7E656009EEC05 /* GeneralTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTabViewController.swift; sourceTree = "<group>"; };
 		5FB621D823A8760E009EEC05 /* CCStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCStoryboard.swift; sourceTree = "<group>"; };
 		5FB621DA23A87D17009EEC05 /* CCWebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWebSocketClient.swift; sourceTree = "<group>"; };
 		5FB621E123A88131009EEC05 /* CCMAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMAPIRequest.swift; sourceTree = "<group>"; };
@@ -103,6 +111,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FA8CC6C23AD08FE00C65F71 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8CC8323AD0A9600C65F71 /* Extensions */,
+				5FA8CC7023AD095800C65F71 /* LaunchScreen */,
+				5FA8CC6F23AD092400C65F71 /* Book */,
+				5FA8CC6E23AD091D00C65F71 /* Trade */,
+				5FA8CC6D23AD091500C65F71 /* Ticker */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5FA8CC6D23AD091500C65F71 /* Ticker */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8CC8123AD0A4100C65F71 /* TickerViewModel.swift */,
+				5F4337A423AD0E0200C38255 /* TickerViewController.swift */,
+			);
+			path = Ticker;
+			sourceTree = "<group>";
+		};
+		5FA8CC6E23AD091D00C65F71 /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8CC7F23AD0A3700C65F71 /* TradeViewModel.swift */,
+				5F4337A223AD0DF900C38255 /* TradeViewController.swift */,
+			);
+			path = Trade;
+			sourceTree = "<group>";
+		};
+		5FA8CC6F23AD092400C65F71 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8CC7D23AD0A2600C65F71 /* BookViewModel.swift */,
+				5FA8CC7723AD09D700C65F71 /* BookViewController.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		5FA8CC7023AD095800C65F71 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5FB621A323A7741B009EEC05 /* LaunchScreen.storyboard */,
+				5FB621CF23A7E656009EEC05 /* GeneralTabViewController.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		5FA8CC8323AD0A9600C65F71 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8CC8423AD0AA500C65F71 /* UIStoryboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5FB6218C23A77419009EEC05 = {
 			isa = PBXGroup;
 			children = (
@@ -128,13 +192,12 @@
 		5FB6219723A77419009EEC05 /* CryptoCurrencyMarket */ = {
 			isa = PBXGroup;
 			children = (
+				5FA8CC6C23AD08FE00C65F71 /* Scenes */,
 				5FB621D723A871AB009EEC05 /* Services */,
-				5FB621CE23A7E619009EEC05 /* ViewController */,
 				5FB6219823A77419009EEC05 /* AppDelegate.swift */,
 				5FB6219A23A77419009EEC05 /* SceneDelegate.swift */,
 				5FB6219C23A77419009EEC05 /* ContentView.swift */,
 				5FB6219E23A7741B009EEC05 /* Assets.xcassets */,
-				5FB621A323A7741B009EEC05 /* LaunchScreen.storyboard */,
 				5FB621CA23A7E556009EEC05 /* Main.storyboard */,
 				5FB621D823A8760E009EEC05 /* CCStoryboard.swift */,
 				5FB621A623A7741B009EEC05 /* Info.plist */,
@@ -167,17 +230,6 @@
 				5FB621BC23A7741B009EEC05 /* Info.plist */,
 			);
 			path = CryptoCurrencyMarketUITests;
-			sourceTree = "<group>";
-		};
-		5FB621CE23A7E619009EEC05 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5FB621CF23A7E656009EEC05 /* GeneralTabViewController.swift */,
-				5FB621D123A86919009EEC05 /* BooksViewController.swift */,
-				5FB621D323A86A02009EEC05 /* TickersViewController.swift */,
-				5FB621D523A86A18009EEC05 /* TradesViewController.swift */,
-			);
-			name = ViewController;
 			sourceTree = "<group>";
 		};
 		5FB621D723A871AB009EEC05 /* Services */ = {
@@ -410,15 +462,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FB621E823A88256009EEC05 /* CCMQueryRequest.swift in Sources */,
-				5FB621D223A86919009EEC05 /* BooksViewController.swift in Sources */,
-				5FB621D623A86A18009EEC05 /* TradesViewController.swift in Sources */,
+				5F4337A323AD0DF900C38255 /* TradeViewController.swift in Sources */,
+				5FA8CC8223AD0A4100C65F71 /* TickerViewModel.swift in Sources */,
+				5FA8CC7823AD09D700C65F71 /* BookViewController.swift in Sources */,
+				5F4337A523AD0E0200C38255 /* TickerViewController.swift in Sources */,
 				5FB6219923A77419009EEC05 /* AppDelegate.swift in Sources */,
-				5FB621D423A86A02009EEC05 /* TickersViewController.swift in Sources */,
 				5FB621D923A8760E009EEC05 /* CCStoryboard.swift in Sources */,
+				5FA8CC8023AD0A3700C65F71 /* TradeViewModel.swift in Sources */,
 				5FB621DB23A87D17009EEC05 /* CCWebSocketClient.swift in Sources */,
+				5FA8CC7E23AD0A2600C65F71 /* BookViewModel.swift in Sources */,
 				5FB621D023A7E656009EEC05 /* GeneralTabViewController.swift in Sources */,
 				5FB6219B23A77419009EEC05 /* SceneDelegate.swift in Sources */,
 				5FB621E623A88239009EEC05 /* CCMQueryResponse.swift in Sources */,
+				5FA8CC8523AD0AA500C65F71 /* UIStoryboard.swift in Sources */,
 				5FB621E223A88131009EEC05 /* CCMAPIRequest.swift in Sources */,
 				5F234AB923AA89A6000DEFF2 /* CCMConstant.swift in Sources */,
 				5FB6219D23A77419009EEC05 /* ContentView.swift in Sources */,
