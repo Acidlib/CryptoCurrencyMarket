@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "ED2E8ABE-8727-4BC9-924F-763466FE91D4"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA2EC3E9-C31A-4258-8EEC-2FD1816113E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CryptoCurrencyMarket/Services/API/CCWebSocketClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "websocketDidReceiveMessage(socket:text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63739E90-F7BC-4B63-83A1-0D21B5B8F17B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CryptoCurrencyMarket/Scenes/Ticker/TickerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "valueDidUpdate(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B9E9B86-DF14-4DE5-93F8-2A3A0A32DA43"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CryptoCurrencyMarket/Scenes/Book/BookViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "E1A23427-BD31-483A-8463-5BFBCCE168AB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "678A2620-E1AE-46ED-88B9-8A865F947331"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CryptoCurrencyMarket/Scenes/Book/BookViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "valueDidUpdate(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "678A2620-E1AE-46ED-88B9-8A865F947331 - 48600116a5bdbaba"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoCurrencyMarket.BookViewModel.valueDidUpdate(Foundation.Notification) -&gt; ()"
+                  moduleName = "CryptoCurrencyMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yi-lingwu/Developer/CryptoCurrencyMarket/CryptoCurrencyMarket/Scenes/Book/BookViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1135">
+               </Location>
+               <Location
+                  uuid = "678A2620-E1AE-46ED-88B9-8A865F947331 - 141be1e2d31817b5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (CryptoCurrencyMarket.CCMSubscribedUpdateBooks, CryptoCurrencyMarket.CCMSubscribedUpdateBooks) -&gt; Swift.Bool in CryptoCurrencyMarket.BookViewModel.valueDidUpdate(Foundation.Notification) -&gt; ()"
+                  moduleName = "CryptoCurrencyMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yi-lingwu/Developer/CryptoCurrencyMarket/CryptoCurrencyMarket/Scenes/Book/BookViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BED1FC26-F1AE-42C8-9C5F-21E62041AFBB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CryptoCurrencyMarket/Scenes/Book/BookViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "valueDidUpdate(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BED1FC26-F1AE-42C8-9C5F-21E62041AFBB - 48600116a5bdbaba"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoCurrencyMarket.BookViewModel.valueDidUpdate(Foundation.Notification) -&gt; ()"
+                  moduleName = "CryptoCurrencyMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yi-lingwu/Developer/CryptoCurrencyMarket/CryptoCurrencyMarket/Scenes/Book/BookViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "BED1FC26-F1AE-42C8-9C5F-21E62041AFBB - 340fb16a2b774ddf"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CryptoCurrencyMarket.CCMSubscribedUpdateBooks) -&gt; Swift.Bool in CryptoCurrencyMarket.BookViewModel.valueDidUpdate(Foundation.Notification) -&gt; ()"
+                  moduleName = "CryptoCurrencyMarket"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yi-lingwu/Developer/CryptoCurrencyMarket/CryptoCurrencyMarket/Scenes/Book/BookViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C07D824-DFF6-40CF-9120-AEEB8FB7E660"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CryptoCurrencyMarket/Scenes/Book/BookCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "configure(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FF93193-12E1-4C67-AD9E-AAF4961002DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CryptoCurrencyMarket/Protocols/ReusableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "dequeueReusableCell(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

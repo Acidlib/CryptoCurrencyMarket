@@ -10,15 +10,14 @@ import Foundation
 import UIKit
 
 class TickerViewModel: NSObject {
-    private var tickerObserver: NSObjectProtocol?
-    @objc dynamic var model = Ticker()
+    @objc dynamic var model = Ticker(ticker: nil)
     
     override init() {
         super .init()
+        NotificationCenter.default.addObserver(self, selector: #selector(valueDidUpdate(_:)), name: .tickerDidUpdate, object: nil)
     }
     
     func updateModel(obj: CCMSubscribedUpdateTickers) {
-        print("vm: \(obj.lastPrice) \(obj.volume)")
         self.model.high = "\(obj.high)"
         self.model.low = "\(obj.low)"
         self.model.bid = "\(obj.bid)"
@@ -27,6 +26,12 @@ class TickerViewModel: NSObject {
         self.model.dailyChange = String(format: "%@%.2f", obj.dailyChange > 0 ? "+" : "", obj.dailyChange)
         self.model.dailyChangeRelative = String(format: "%@%.2f %%", obj.dailyChange > 0 ? "+" : "", obj.dailyChangeRelative*100)
         self.model.volume = String(format: "%.2f", obj.volume)
+    }
+    
+    @objc func valueDidUpdate(_ notification: Notification) {
+        if let obj = notification.object as? CCMSubscribedUpdateTickers {
+            self.model = Ticker(ticker: obj)
+        }
     }
 }
 

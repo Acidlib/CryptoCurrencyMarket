@@ -19,16 +19,18 @@ class TickerViewController: UIViewController {
     @IBOutlet weak var volume: UILabel!
     
     var tickerViewModel = TickerViewModel()
-    var tickerObserver: NSObjectProtocol?
+    private var tickerObserver: NSObjectProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        subscribeToNotifications()
+        observeViewModel()
         updateUIElements()
     }
     
-    func subscribeToNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(valueDidUpdate(_:)), name: .tickerDidUpdate, object: nil)
+    func observeViewModel() {
+        self.tickerObserver = tickerViewModel.observe(\.model, options: [.initial, .new, .old], changeHandler: { (viewModel, change) in
+            self.updateUIElements()
+        })
     }
     
     func updateUIElements() {
@@ -48,13 +50,6 @@ class TickerViewController: UIViewController {
                 self.dailyChangeRelative.textColor = CCMColor.redColor()
                 self.dailyChange.textColor = CCMColor.redColor()
             }
-        }
-    }
-    
-    @objc func valueDidUpdate(_ notification: Notification) {
-        if let obj = notification.object as? CCMSubscribedUpdateTickers {
-            self.tickerViewModel.updateModel(obj: obj)
-            updateUIElements()
         }
     }
 }

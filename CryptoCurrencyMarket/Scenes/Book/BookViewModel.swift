@@ -9,13 +9,29 @@
 import Foundation
 import UIKit
 
-class BookViewModel {
+class BookViewModel: NSObject {
     
-    let model = CCMSubscribedUpdateBooks(array: [])
+    @objc dynamic var model = [Book]()
     
-    init() {
+    override init() {
+        super .init()
+        NotificationCenter.default.addObserver(self, selector: #selector(valueDidUpdate(_:)), name: .bookDidUpdate, object: nil)
     }
     
     @objc func valueDidUpdate(_ notification: Notification) {
+        if let obj = notification.object as? CCMSubscribedUpdateBooks {
+            let book = Book(book: obj)
+            model = model.filter({ $0.price != obj.price })
+            model.append(book)
+            model = model.sorted(by: { $0.price > $1.price })
+        }
+    }
+    
+    var numberOfItems: Int {
+        return model.count
+    }
+   
+    func getBook(at indexPath: IndexPath) -> Book {
+        return model[indexPath.row]
     }
 }

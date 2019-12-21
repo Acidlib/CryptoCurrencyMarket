@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class Book: NSObject {
+
+    var price: Double = 0
+    var amount: Double = 0
+    var count: Int = 0
+    
+    init(book: CCMSubscribedUpdateBooks) {
+        price = book.price
+        amount = book.amount
+        count = book.count
+    }
+}
+
