@@ -10,6 +10,9 @@
 		5F234AB923AA89A6000DEFF2 /* CCMConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F234AB823AA89A6000DEFF2 /* CCMConstant.swift */; };
 		5F4337A323AD0DF900C38255 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4337A223AD0DF900C38255 /* TradeViewController.swift */; };
 		5F4337A523AD0E0200C38255 /* TickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4337A423AD0E0200C38255 /* TickerViewController.swift */; };
+		5F4337A823ADBB1C00C38255 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4337A723ADBB1C00C38255 /* ReusableView.swift */; };
+		5F4337AA23ADBD3700C38255 /* ReusableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4337A923ADBD3700C38255 /* ReusableHeader.xib */; };
+		5F4337AC23ADBD9F00C38255 /* ReusableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4337AB23ADBD9F00C38255 /* ReusableHeader.swift */; };
 		5FA8CC7823AD09D700C65F71 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8CC7723AD09D700C65F71 /* BookViewController.swift */; };
 		5FA8CC7E23AD0A2600C65F71 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8CC7D23AD0A2600C65F71 /* BookViewModel.swift */; };
 		5FA8CC8023AD0A3700C65F71 /* TradeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8CC7F23AD0A3700C65F71 /* TradeViewModel.swift */; };
@@ -54,6 +57,9 @@
 		5F234AB823AA89A6000DEFF2 /* CCMConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMConstant.swift; sourceTree = "<group>"; };
 		5F4337A223AD0DF900C38255 /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
 		5F4337A423AD0E0200C38255 /* TickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewController.swift; sourceTree = "<group>"; };
+		5F4337A723ADBB1C00C38255 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		5F4337A923ADBD3700C38255 /* ReusableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableHeader.xib; sourceTree = "<group>"; };
+		5F4337AB23ADBD9F00C38255 /* ReusableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableHeader.swift; sourceTree = "<group>"; };
 		5FA8CC7723AD09D700C65F71 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		5FA8CC7D23AD0A2600C65F71 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		5FA8CC7F23AD0A3700C65F71 /* TradeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewModel.swift; sourceTree = "<group>"; };
@@ -111,6 +117,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F4337A623ADBAEA00C38255 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5F4337A723ADBB1C00C38255 /* ReusableView.swift */,
+				5F4337A923ADBD3700C38255 /* ReusableHeader.xib */,
+				5F4337AB23ADBD9F00C38255 /* ReusableHeader.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		5FA8CC6C23AD08FE00C65F71 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +208,7 @@
 		5FB6219723A77419009EEC05 /* CryptoCurrencyMarket */ = {
 			isa = PBXGroup;
 			children = (
+				5F4337A623ADBAEA00C38255 /* Protocols */,
 				5FA8CC6C23AD08FE00C65F71 /* Scenes */,
 				5FB621D723A871AB009EEC05 /* Services */,
 				5FB6219823A77419009EEC05 /* AppDelegate.swift */,
@@ -394,6 +411,7 @@
 				5FB621A523A7741B009EEC05 /* LaunchScreen.storyboard in Resources */,
 				5FB621A223A7741B009EEC05 /* Preview Assets.xcassets in Resources */,
 				5FB6219F23A7741B009EEC05 /* Assets.xcassets in Resources */,
+				5F4337AA23ADBD3700C38255 /* ReusableHeader.xib in Resources */,
 				5FB621CB23A7E557009EEC05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,12 +488,14 @@
 				5FB621D923A8760E009EEC05 /* CCStoryboard.swift in Sources */,
 				5FA8CC8023AD0A3700C65F71 /* TradeViewModel.swift in Sources */,
 				5FB621DB23A87D17009EEC05 /* CCWebSocketClient.swift in Sources */,
+				5F4337A823ADBB1C00C38255 /* ReusableView.swift in Sources */,
 				5FA8CC7E23AD0A2600C65F71 /* BookViewModel.swift in Sources */,
 				5FB621D023A7E656009EEC05 /* GeneralTabViewController.swift in Sources */,
 				5FB6219B23A77419009EEC05 /* SceneDelegate.swift in Sources */,
 				5FB621E623A88239009EEC05 /* CCMQueryResponse.swift in Sources */,
 				5FA8CC8523AD0AA500C65F71 /* UIStoryboard.swift in Sources */,
 				5FB621E223A88131009EEC05 /* CCMAPIRequest.swift in Sources */,
+				5F4337AC23ADBD9F00C38255 /* ReusableHeader.swift in Sources */,
 				5F234AB923AA89A6000DEFF2 /* CCMConstant.swift in Sources */,
 				5FB6219D23A77419009EEC05 /* ContentView.swift in Sources */,
 			);

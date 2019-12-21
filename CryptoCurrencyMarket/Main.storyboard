@@ -28,28 +28,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjF-Nh-ReB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjF-Nh-ReB" customClass="ReusableHeader" customModule="CryptoCurrencyMarket" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="80"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BCT/USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIb-nd-IYj">
-                                        <rect key="frame" x="10" y="35.5" width="394" height="44.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="37"/>
-                                        <color key="textColor" red="1" green="0.91567423088586786" blue="0.23984834064286686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" red="0.1124119646" green="0.13064590770000001" blue="0.18436285620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="iIb-nd-IYj" secondAttribute="bottom" id="CN0-hV-q8G"/>
                                     <constraint firstAttribute="height" constant="80" id="E4H-aN-GVC"/>
-                                    <constraint firstAttribute="trailing" secondItem="iIb-nd-IYj" secondAttribute="trailing" constant="10" id="uLy-SM-CaQ"/>
-                                    <constraint firstItem="iIb-nd-IYj" firstAttribute="leading" secondItem="RjF-Nh-ReB" secondAttribute="leading" constant="10" id="zLU-Ps-ykH"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EaG-yW-N6n">
                                 <rect key="frame" x="10" y="144" width="394" height="580"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-UJ-CSC">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-UJ-CSC" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="197" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptC-Ml-pS0">
@@ -77,7 +66,7 @@
                                             <constraint firstItem="ptC-Ml-pS0" firstAttribute="top" secondItem="6eI-UJ-CSC" secondAttribute="top" constant="10" id="sIJ-no-DMh"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHF-pd-AdL">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHF-pd-AdL" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="160" width="197" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd7-Z3-mRb">
@@ -105,7 +94,7 @@
                                             <constraint firstItem="VnW-RQ-nkd" firstAttribute="top" secondItem="yHF-pd-AdL" secondAttribute="top" constant="27" id="wFU-fl-RFZ"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-r0-Yln">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-r0-Yln" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
                                         <rect key="frame" x="197" y="0.0" width="197" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bid" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy4-Y1-qDx">
@@ -133,7 +122,7 @@
                                             <constraint firstItem="oSg-hu-f4s" firstAttribute="leading" secondItem="ncM-r0-Yln" secondAttribute="leading" id="nzw-pH-adw"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-Wu-ezG">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-Wu-ezG" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
                                         <rect key="frame" x="197" y="160" width="197" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWz-nR-Isf">
@@ -182,7 +171,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bW-xM-yJk">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bW-xM-yJk" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="280" width="130" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yne-nu-5io">
@@ -257,7 +246,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K1H-pZ-2Wd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Market" id="YQw-n3-JUc" customClass="Price"/>
+                    <tabBarItem key="tabBarItem" title="Ticker" id="YQw-n3-JUc" customClass="Price"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwA-X7-0xB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,22 +260,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7UE-My-yGf">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7UE-My-yGf" customClass="ReusableHeader" customModule="CryptoCurrencyMarket" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="80"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BCT/USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgR-rj-1BT">
-                                        <rect key="frame" x="10" y="35.5" width="394" height="44.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="37"/>
-                                        <color key="textColor" red="1" green="0.9156742309" blue="0.23984834059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" red="0.1124119646" green="0.13064590770000001" blue="0.18436285620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="5ae-qe-psk"/>
-                                    <constraint firstAttribute="bottom" secondItem="BgR-rj-1BT" secondAttribute="bottom" id="FuF-yQ-ZM0"/>
-                                    <constraint firstItem="BgR-rj-1BT" firstAttribute="leading" secondItem="7UE-My-yGf" secondAttribute="leading" constant="10" id="reQ-fH-3vM"/>
-                                    <constraint firstAttribute="trailing" secondItem="BgR-rj-1BT" secondAttribute="trailing" constant="10" id="z7L-Yf-d4G"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lth-ke-nkC">
@@ -318,7 +296,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VpU-od-Rin"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Portforlio" id="RDf-Wl-aj7"/>
+                    <tabBarItem key="tabBarItem" title="Books" id="RDf-Wl-aj7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQX-1G-GM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,22 +331,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNd-tU-YTL">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNd-tU-YTL" customClass="ReusableHeader" customModule="CryptoCurrencyMarket" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="80"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BCT/USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clH-vM-cjK">
-                                        <rect key="frame" x="10" y="35.5" width="394" height="44.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="37"/>
-                                        <color key="textColor" red="1" green="0.9156742309" blue="0.23984834059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" red="0.1124119646" green="0.13064590770000001" blue="0.18436285620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="DqK-cN-zVo"/>
-                                    <constraint firstItem="clH-vM-cjK" firstAttribute="leading" secondItem="MNd-tU-YTL" secondAttribute="leading" constant="10" id="GMU-eV-WmU"/>
-                                    <constraint firstAttribute="bottom" secondItem="clH-vM-cjK" secondAttribute="bottom" id="cZ3-I8-h0p"/>
-                                    <constraint firstAttribute="trailing" secondItem="clH-vM-cjK" secondAttribute="trailing" constant="10" id="eas-Lg-xhg"/>
                                 </constraints>
                             </view>
                         </subviews>
