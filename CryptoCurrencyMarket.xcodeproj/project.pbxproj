@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F13A36B23ADCFD20062E4A7 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F13A36A23ADCFD20062E4A7 /* Ticker.swift */; };
+		5F13A36D23ADCFDC0062E4A7 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F13A36C23ADCFDC0062E4A7 /* Trade.swift */; };
+		5F13A36F23ADCFE20062E4A7 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F13A36E23ADCFE20062E4A7 /* Book.swift */; };
 		5F234AB923AA89A6000DEFF2 /* CCMConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F234AB823AA89A6000DEFF2 /* CCMConstant.swift */; };
 		5F4337A323AD0DF900C38255 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4337A223AD0DF900C38255 /* TradeViewController.swift */; };
 		5F4337A523AD0E0200C38255 /* TickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4337A423AD0E0200C38255 /* TickerViewController.swift */; };
@@ -33,6 +36,8 @@
 		5FB621E223A88131009EEC05 /* CCMAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621E123A88131009EEC05 /* CCMAPIRequest.swift */; };
 		5FB621E623A88239009EEC05 /* CCMQueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621E523A88239009EEC05 /* CCMQueryResponse.swift */; };
 		5FB621E823A88256009EEC05 /* CCMQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB621E723A88256009EEC05 /* CCMQueryRequest.swift */; };
+		5FCA584023AE04CC00C39AAD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA583F23AE04CC00C39AAD /* Extensions.swift */; };
+		5FCA584223AE07C000C39AAD /* CCMColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA584123AE07C000C39AAD /* CCMColor.swift */; };
 		B54700C7EF5D6F7D925E3A81 /* Pods_CryptoCurrencyMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFA0E62DE1862E0C398C955 /* Pods_CryptoCurrencyMarket.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F13A36A23ADCFD20062E4A7 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		5F13A36C23ADCFDC0062E4A7 /* Trade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
+		5F13A36E23ADCFE20062E4A7 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		5F234AB823AA89A6000DEFF2 /* CCMConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMConstant.swift; sourceTree = "<group>"; };
 		5F4337A223AD0DF900C38255 /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
 		5F4337A423AD0E0200C38255 /* TickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +94,8 @@
 		5FB621E123A88131009EEC05 /* CCMAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMAPIRequest.swift; sourceTree = "<group>"; };
 		5FB621E523A88239009EEC05 /* CCMQueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMQueryResponse.swift; sourceTree = "<group>"; };
 		5FB621E723A88256009EEC05 /* CCMQueryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMQueryRequest.swift; sourceTree = "<group>"; };
+		5FCA583F23AE04CC00C39AAD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5FCA584123AE07C000C39AAD /* CCMColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMColor.swift; sourceTree = "<group>"; };
 		BEFA0E62DE1862E0C398C955 /* Pods_CryptoCurrencyMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoCurrencyMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCFA0FC3213782D4A61735D /* Pods-CryptoCurrencyMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrencyMarket.release.xcconfig"; path = "Target Support Files/Pods-CryptoCurrencyMarket/Pods-CryptoCurrencyMarket.release.xcconfig"; sourceTree = "<group>"; };
 		C6B7A2B0FA8075CDE6A0CE85 /* Pods-CryptoCurrencyMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrencyMarket.debug.xcconfig"; path = "Target Support Files/Pods-CryptoCurrencyMarket/Pods-CryptoCurrencyMarket.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +127,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F13A36923ADCFBE0062E4A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F13A36A23ADCFD20062E4A7 /* Ticker.swift */,
+				5F13A36C23ADCFDC0062E4A7 /* Trade.swift */,
+				5F13A36E23ADCFE20062E4A7 /* Book.swift */,
+				5FCA584123AE07C000C39AAD /* CCMColor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5F4337A623ADBAEA00C38255 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +229,8 @@
 		5FB6219723A77419009EEC05 /* CryptoCurrencyMarket */ = {
 			isa = PBXGroup;
 			children = (
+				5FCA583E23AE04BB00C39AAD /* Extension */,
+				5F13A36923ADCFBE0062E4A7 /* Model */,
 				5F4337A623ADBAEA00C38255 /* Protocols */,
 				5FA8CC6C23AD08FE00C65F71 /* Scenes */,
 				5FB621D723A871AB009EEC05 /* Services */,
@@ -283,6 +306,14 @@
 				5FB621E523A88239009EEC05 /* CCMQueryResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		5FCA583E23AE04BB00C39AAD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5FCA583F23AE04CC00C39AAD /* Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		7A8CD31E3599AD7DCED9E126 /* Pods */ = {
@@ -479,6 +510,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCA584023AE04CC00C39AAD /* Extensions.swift in Sources */,
 				5FB621E823A88256009EEC05 /* CCMQueryRequest.swift in Sources */,
 				5F4337A323AD0DF900C38255 /* TradeViewController.swift in Sources */,
 				5FA8CC8223AD0A4100C65F71 /* TickerViewModel.swift in Sources */,
@@ -489,13 +521,17 @@
 				5FA8CC8023AD0A3700C65F71 /* TradeViewModel.swift in Sources */,
 				5FB621DB23A87D17009EEC05 /* CCWebSocketClient.swift in Sources */,
 				5F4337A823ADBB1C00C38255 /* ReusableView.swift in Sources */,
+				5FCA584223AE07C000C39AAD /* CCMColor.swift in Sources */,
 				5FA8CC7E23AD0A2600C65F71 /* BookViewModel.swift in Sources */,
 				5FB621D023A7E656009EEC05 /* GeneralTabViewController.swift in Sources */,
 				5FB6219B23A77419009EEC05 /* SceneDelegate.swift in Sources */,
 				5FB621E623A88239009EEC05 /* CCMQueryResponse.swift in Sources */,
+				5F13A36F23ADCFE20062E4A7 /* Book.swift in Sources */,
+				5F13A36D23ADCFDC0062E4A7 /* Trade.swift in Sources */,
 				5FA8CC8523AD0AA500C65F71 /* UIStoryboard.swift in Sources */,
 				5FB621E223A88131009EEC05 /* CCMAPIRequest.swift in Sources */,
 				5F4337AC23ADBD9F00C38255 /* ReusableHeader.swift in Sources */,
+				5F13A36B23ADCFD20062E4A7 /* Ticker.swift in Sources */,
 				5F234AB923AA89A6000DEFF2 /* CCMConstant.swift in Sources */,
 				5FB6219D23A77419009EEC05 /* ContentView.swift in Sources */,
 			);

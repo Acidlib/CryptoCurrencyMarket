@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+class TradeViewModel {
+    
+    let model = CCMSubscribedUpdateTrades(array: [])
+    
+    init() {
+    }
+    
+    @objc func valueDidUpdate(_ notification: Notification) {
+    }
+}

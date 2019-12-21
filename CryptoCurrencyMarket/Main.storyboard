@@ -47,8 +47,8 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999.9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxY-yz-eXA">
-                                                <rect key="frame" x="0.0" y="27" width="197" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999.9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxY-yz-eXA">
+                                                <rect key="frame" x="10" y="27" width="177" height="26"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                                         <constraints>
                                             <constraint firstItem="fxY-yz-eXA" firstAttribute="centerX" secondItem="6eI-UJ-CSC" secondAttribute="centerX" id="6uQ-CO-9qP"/>
                                             <constraint firstItem="ptC-Ml-pS0" firstAttribute="leading" secondItem="6eI-UJ-CSC" secondAttribute="leading" constant="10" id="Ukg-2W-UYf"/>
-                                            <constraint firstItem="fxY-yz-eXA" firstAttribute="leading" secondItem="6eI-UJ-CSC" secondAttribute="leading" id="Yps-W0-lRd"/>
+                                            <constraint firstItem="fxY-yz-eXA" firstAttribute="leading" secondItem="6eI-UJ-CSC" secondAttribute="leading" constant="10" id="Yps-W0-lRd"/>
                                             <constraint firstItem="fxY-yz-eXA" firstAttribute="centerY" secondItem="6eI-UJ-CSC" secondAttribute="centerY" id="Zej-2b-P2Y"/>
                                             <constraint firstItem="fxY-yz-eXA" firstAttribute="centerY" secondItem="6eI-UJ-CSC" secondAttribute="centerY" id="baG-47-aYD"/>
                                             <constraint firstItem="ptC-Ml-pS0" firstAttribute="width" secondItem="6eI-UJ-CSC" secondAttribute="width" id="kIw-zN-2qO"/>
@@ -75,8 +75,8 @@
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999.9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnW-RQ-nkd">
-                                                <rect key="frame" x="0.0" y="27" width="197" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999.9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnW-RQ-nkd">
+                                                <rect key="frame" x="10" y="27" width="177" height="26"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -89,13 +89,13 @@
                                             <constraint firstItem="gd7-Z3-mRb" firstAttribute="leading" secondItem="yHF-pd-AdL" secondAttribute="leading" constant="10" id="OVM-R6-WkJ"/>
                                             <constraint firstItem="VnW-RQ-nkd" firstAttribute="centerY" secondItem="yHF-pd-AdL" secondAttribute="centerY" id="bwu-Kp-f95"/>
                                             <constraint firstItem="gd7-Z3-mRb" firstAttribute="width" secondItem="yHF-pd-AdL" secondAttribute="width" multiplier="0.8" id="c59-c4-r06"/>
-                                            <constraint firstItem="VnW-RQ-nkd" firstAttribute="leading" secondItem="yHF-pd-AdL" secondAttribute="leading" id="eVV-NV-qRM"/>
+                                            <constraint firstItem="VnW-RQ-nkd" firstAttribute="leading" secondItem="yHF-pd-AdL" secondAttribute="leading" constant="10" id="eVV-NV-qRM"/>
                                             <constraint firstItem="VnW-RQ-nkd" firstAttribute="centerY" secondItem="yHF-pd-AdL" secondAttribute="centerY" id="gQq-Sm-mN0"/>
                                             <constraint firstItem="VnW-RQ-nkd" firstAttribute="top" secondItem="yHF-pd-AdL" secondAttribute="top" constant="27" id="wFU-fl-RFZ"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-r0-Yln" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
-                                        <rect key="frame" x="197" y="0.0" width="197" height="80"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-r0-Yln" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
+                                        <rect key="frame" x="198" y="1" width="197" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bid" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy4-Y1-qDx">
                                                 <rect key="frame" x="-10" y="10" width="197" height="20"/>
@@ -103,8 +103,8 @@
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999.9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSg-hu-f4s">
-                                                <rect key="frame" x="0.0" y="27" width="197" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999.9" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSg-hu-f4s">
+                                                <rect key="frame" x="10" y="27" width="177" height="26"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -119,7 +119,7 @@
                                             <constraint firstItem="oSg-hu-f4s" firstAttribute="centerY" secondItem="ncM-r0-Yln" secondAttribute="centerY" id="cd6-3f-Bj9"/>
                                             <constraint firstItem="vy4-Y1-qDx" firstAttribute="top" secondItem="ncM-r0-Yln" secondAttribute="top" constant="10" id="cyS-Ag-ZfM"/>
                                             <constraint firstAttribute="trailing" secondItem="vy4-Y1-qDx" secondAttribute="trailing" constant="10" id="nju-K4-Vuq"/>
-                                            <constraint firstItem="oSg-hu-f4s" firstAttribute="leading" secondItem="ncM-r0-Yln" secondAttribute="leading" id="nzw-pH-adw"/>
+                                            <constraint firstItem="oSg-hu-f4s" firstAttribute="leading" secondItem="ncM-r0-Yln" secondAttribute="leading" constant="10" id="nzw-pH-adw"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-Wu-ezG" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
@@ -131,8 +131,8 @@
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999.9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LP-Dg-G4z">
-                                                <rect key="frame" x="0.0" y="27" width="197" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999.9" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LP-Dg-G4z">
+                                                <rect key="frame" x="10" y="27" width="177" height="26"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -146,7 +146,7 @@
                                             <constraint firstItem="2LP-Dg-G4z" firstAttribute="top" secondItem="bdC-Wu-ezG" secondAttribute="top" constant="27" id="E6k-KA-CuC"/>
                                             <constraint firstItem="2LP-Dg-G4z" firstAttribute="centerY" secondItem="bdC-Wu-ezG" secondAttribute="centerY" id="O98-sJ-xmz"/>
                                             <constraint firstItem="2LP-Dg-G4z" firstAttribute="centerX" secondItem="bdC-Wu-ezG" secondAttribute="centerX" id="e1j-RJ-IjD"/>
-                                            <constraint firstItem="2LP-Dg-G4z" firstAttribute="leading" secondItem="bdC-Wu-ezG" secondAttribute="leading" id="gI6-gA-crH"/>
+                                            <constraint firstItem="2LP-Dg-G4z" firstAttribute="leading" secondItem="bdC-Wu-ezG" secondAttribute="leading" constant="10" id="gI6-gA-crH"/>
                                             <constraint firstItem="2LP-Dg-G4z" firstAttribute="centerY" secondItem="bdC-Wu-ezG" secondAttribute="centerY" id="h5a-jn-unW"/>
                                         </constraints>
                                     </view>
@@ -174,14 +174,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bW-xM-yJk" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="280" width="130" height="80"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yne-nu-5io">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yne-nu-5io">
                                                 <rect key="frame" x="10" y="0.0" width="104" height="19.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999.9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH0-q9-N3F">
-                                                <rect key="frame" x="0.0" y="27" width="130" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999.9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH0-q9-N3F">
+                                                <rect key="frame" x="10" y="27" width="110" height="26"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -190,7 +190,7 @@
                                         <color key="backgroundColor" red="0.1289955941" green="0.16854360239999999" blue="0.20804323189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="VH0-q9-N3F" firstAttribute="centerY" secondItem="5bW-xM-yJk" secondAttribute="centerY" id="2mX-WR-M8T"/>
-                                            <constraint firstItem="VH0-q9-N3F" firstAttribute="leading" secondItem="5bW-xM-yJk" secondAttribute="leading" id="3Sd-ez-oHB"/>
+                                            <constraint firstItem="VH0-q9-N3F" firstAttribute="leading" secondItem="5bW-xM-yJk" secondAttribute="leading" constant="10" id="3Sd-ez-oHB"/>
                                             <constraint firstItem="VH0-q9-N3F" firstAttribute="top" secondItem="5bW-xM-yJk" secondAttribute="top" constant="27" id="4IM-4p-HW4"/>
                                             <constraint firstItem="yne-nu-5io" firstAttribute="top" secondItem="5bW-xM-yJk" secondAttribute="top" id="ROk-Dw-6bm"/>
                                             <constraint firstItem="VH0-q9-N3F" firstAttribute="centerY" secondItem="5bW-xM-yJk" secondAttribute="centerY" id="StI-tw-buL"/>
@@ -247,6 +247,16 @@
                         <viewLayoutGuide key="safeArea" id="K1H-pZ-2Wd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ticker" id="YQw-n3-JUc" customClass="Price"/>
+                    <connections>
+                        <outlet property="ask" destination="2LP-Dg-G4z" id="AnP-Ia-bgH"/>
+                        <outlet property="bid" destination="oSg-hu-f4s" id="Uc5-sr-ejM"/>
+                        <outlet property="currentPrice" destination="hyN-rs-9eO" id="aKh-MY-g4Z"/>
+                        <outlet property="dailyChange" destination="UkI-zg-SRu" id="iOv-fU-OTY"/>
+                        <outlet property="dailyChangeRelative" destination="OsS-UX-Fj4" id="VnI-I5-SiT"/>
+                        <outlet property="high" destination="fxY-yz-eXA" id="YFm-C1-lpA"/>
+                        <outlet property="low" destination="VnW-RQ-nkd" id="a1p-B8-TZn"/>
+                        <outlet property="volume" destination="VH0-q9-N3F" id="aYW-m3-eXS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwA-X7-0xB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

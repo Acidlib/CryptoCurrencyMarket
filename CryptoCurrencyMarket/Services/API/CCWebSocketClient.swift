@@ -72,21 +72,20 @@ extension CCMWebSocketClient: WebSocketDelegate {
                     switch chanelName {
                     case "ticker":
                         if let bodyArray = jsonArray[1] as? Array<NSNumber>, let ticker = CCMSubscribedUpdateTickers(array: bodyArray) {
-                            print("ticker: \(ticker)")
+                            NotificationCenter.default.post(name: .tickerDidUpdate, object: ticker)
                         }
                     case "trades":
                         if jsonArray.count > 2, let bodyArray = jsonArray[2] as? Array<NSNumber>, let trades = CCMSubscribedUpdateTrades(array: bodyArray) {
-                            print("trades: \(trades)")
+                            NotificationCenter.default.post(name: .tradeDidUpdate, object: trades)
                         }
                     case "book":
                         if let bodyArray = jsonArray[1] as? Array<NSNumber>, let book = CCMSubscribedUpdateBooks(array: bodyArray) {
-                            print("trades: \(book)")
+                            NotificationCenter.default.post(name: .bookDidUpdate, object: book)
                         }
                     default:
                         print("")
                     }
                 }
-                print("MSG: \(jsonArray)")
             } else {
                 print("Unparsed MSG: \(text)")
             }
