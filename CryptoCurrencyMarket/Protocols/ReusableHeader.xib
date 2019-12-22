@@ -26,13 +26,23 @@
                             <color key="textColor" red="1" green="0.9156742309" blue="0.23984834059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxU-IO-xBs">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                            <connections>
+                                <action selector="willChangeCurrencyPair:" destination="-1" eventType="touchUpInside" id="hTC-jS-RwG"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.1124119646" green="0.13064590770000001" blue="0.18436285620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="UnD-Zd-YFR" firstAttribute="leading" secondItem="c2L-7p-moS" secondAttribute="leading" constant="10" id="CzG-hd-WL4"/>
+                        <constraint firstItem="GxU-IO-xBs" firstAttribute="top" secondItem="c2L-7p-moS" secondAttribute="top" id="Lfx-6i-nCi"/>
                         <constraint firstAttribute="trailing" secondItem="UnD-Zd-YFR" secondAttribute="trailing" constant="10" id="O45-Lb-BPt"/>
                         <constraint firstAttribute="bottom" secondItem="UnD-Zd-YFR" secondAttribute="bottom" id="cAm-4F-m8Y"/>
                         <constraint firstAttribute="height" constant="80" id="l0s-pX-UNJ"/>
+                        <constraint firstAttribute="trailing" secondItem="GxU-IO-xBs" secondAttribute="trailing" id="lDg-l1-CBB"/>
+                        <constraint firstItem="GxU-IO-xBs" firstAttribute="leading" secondItem="c2L-7p-moS" secondAttribute="leading" id="pVM-Me-wEQ"/>
+                        <constraint firstAttribute="bottom" secondItem="GxU-IO-xBs" secondAttribute="bottom" id="uED-qe-6wO"/>
                     </constraints>
                 </view>
             </subviews>
