@@ -247,7 +247,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K1H-pZ-2Wd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ticker" id="YQw-n3-JUc" customClass="Price"/>
+                    <tabBarItem key="tabBarItem" title="Ticker" image="tag" catalog="system" selectedImage="tag" id="YQw-n3-JUc" customClass="Price"/>
                     <connections>
                         <outlet property="ask" destination="2LP-Dg-G4z" id="AnP-Ia-bgH"/>
                         <outlet property="bid" destination="oSg-hu-f4s" id="Uc5-sr-ejM"/>
@@ -352,7 +352,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VpU-od-Rin"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Books" id="RDf-Wl-aj7"/>
+                    <tabBarItem key="tabBarItem" title="Books" image="book" catalog="system" selectedImage="book" id="RDf-Wl-aj7"/>
                     <connections>
                         <outlet property="tableView" destination="Lth-ke-nkC" id="Wa9-Qe-Lt6"/>
                     </connections>
@@ -414,7 +414,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ppn-09-N7L"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Trading" id="J5M-PO-Vue"/>
+                    <tabBarItem key="tabBarItem" title="Trading" image="slider.horizontal.below.rectangle" catalog="system" selectedImage="slider.horizontal.below.rectangle" id="J5M-PO-Vue">
+                        <color key="badgeColor" red="1" green="0.9156742309" blue="0.23984834059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="chartView" destination="LJ3-8q-OGR" id="qeL-Fm-85Q"/>
                     </connections>
@@ -424,4 +426,9 @@
             <point key="canvasLocation" x="-1839" y="3"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="book" catalog="system" width="64" height="50"/>
+        <image name="slider.horizontal.below.rectangle" catalog="system" width="64" height="56"/>
+        <image name="tag" catalog="system" width="64" height="58"/>
+    </resources>
 </document>
