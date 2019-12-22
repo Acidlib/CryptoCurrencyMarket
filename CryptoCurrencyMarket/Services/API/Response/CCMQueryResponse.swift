@@ -97,14 +97,14 @@ struct CCMSubscribedUpdateTickers {
 
 struct CCMSubscribedUpdateTrades {
     var id: Int
-    var mts: Double
+    var mts: Int
     var amount: Double
     var price: Double
     
     init?(array: [NSNumber]) {
         if array.count == 4 {
             self.id = array[0].intValue
-            self.mts = array[1].doubleValue
+            self.mts = array[1].intValue
             self.amount = array[2].doubleValue
             self.price = array[3].doubleValue
         } else {

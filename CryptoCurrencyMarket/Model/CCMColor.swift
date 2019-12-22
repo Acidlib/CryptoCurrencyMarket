@@ -17,4 +17,8 @@ struct CCMColor {
     static func redColor() -> UIColor {
         return UIColor().hexColor(hex: "ff7542")
     }
+    
+    static func yellowColor() -> UIColor {
+        return UIColor().hexColor(hex: "fae846")
+    }
 }

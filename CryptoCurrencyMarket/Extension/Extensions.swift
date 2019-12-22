@@ -55,3 +55,10 @@ extension UIColor {
 //    }
 }
 
+extension Date {
+    func timeInHourMinString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm:ss"
+        return dateFormatter.string(from: self)
+    }
+}
