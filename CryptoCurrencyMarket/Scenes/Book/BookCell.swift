@@ -18,7 +18,7 @@ class BookCell: UITableViewCell {
     func configure(with book: Book) {
         price.text = "\(book.price)"
         amount.text = String(format: "%.3f", book.amount)
-        let cal = Float(book.price * book.amount / 50000)
+        let cal = Float(book.price * book.amount / 20000) // example view, idk
         count.progress = abs(cal)
         count.progressTintColor = cal > 0 ? CCMColor.greenColor() : CCMColor.redColor()
     }
