@@ -39,6 +39,7 @@
 		5FCA584023AE04CC00C39AAD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA583F23AE04CC00C39AAD /* Extensions.swift */; };
 		5FCA584223AE07C000C39AAD /* CCMColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA584123AE07C000C39AAD /* CCMColor.swift */; };
 		5FCA584423AE671500C39AAD /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA584323AE671500C39AAD /* BookCell.swift */; };
+		5FCA584823AF0D2400C39AAD /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA584723AF0D2400C39AAD /* Charts.swift */; };
 		B54700C7EF5D6F7D925E3A81 /* Pods_CryptoCurrencyMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFA0E62DE1862E0C398C955 /* Pods_CryptoCurrencyMarket.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		5FCA583F23AE04CC00C39AAD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5FCA584123AE07C000C39AAD /* CCMColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMColor.swift; sourceTree = "<group>"; };
 		5FCA584323AE671500C39AAD /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		5FCA584723AF0D2400C39AAD /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		BEFA0E62DE1862E0C398C955 /* Pods_CryptoCurrencyMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoCurrencyMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCFA0FC3213782D4A61735D /* Pods-CryptoCurrencyMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrencyMarket.release.xcconfig"; path = "Target Support Files/Pods-CryptoCurrencyMarket/Pods-CryptoCurrencyMarket.release.xcconfig"; sourceTree = "<group>"; };
 		C6B7A2B0FA8075CDE6A0CE85 /* Pods-CryptoCurrencyMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCurrencyMarket.debug.xcconfig"; path = "Target Support Files/Pods-CryptoCurrencyMarket/Pods-CryptoCurrencyMarket.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				5F13A36C23ADCFDC0062E4A7 /* Trade.swift */,
 				5F13A36E23ADCFE20062E4A7 /* Book.swift */,
 				5FCA584123AE07C000C39AAD /* CCMColor.swift */,
+				5FCA584723AF0D2400C39AAD /* Charts.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				5FB621E823A88256009EEC05 /* CCMQueryRequest.swift in Sources */,
 				5F4337A323AD0DF900C38255 /* TradeViewController.swift in Sources */,
 				5FA8CC8223AD0A4100C65F71 /* TickerViewModel.swift in Sources */,
+				5FCA584823AF0D2400C39AAD /* Charts.swift in Sources */,
 				5FA8CC7823AD09D700C65F71 /* BookViewController.swift in Sources */,
 				5F4337A523AD0E0200C38255 /* TickerViewController.swift in Sources */,
 				5FB6219923A77419009EEC05 /* AppDelegate.swift in Sources */,

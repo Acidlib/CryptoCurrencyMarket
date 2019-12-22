@@ -396,16 +396,27 @@
                                     <constraint firstAttribute="height" constant="80" id="DqK-cN-zVo"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJ3-8q-OGR" customClass="CombinedChartView" customModule="Charts">
+                                <rect key="frame" x="10" y="144" width="394" height="589"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1124119646" green="0.13064590770000001" blue="0.18436285620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MNd-tU-YTL" firstAttribute="leading" secondItem="Ppn-09-N7L" secondAttribute="leading" id="JF1-rP-GOG"/>
+                            <constraint firstItem="LJ3-8q-OGR" firstAttribute="trailing" secondItem="Ppn-09-N7L" secondAttribute="trailing" constant="-10" id="OP6-TG-Iee"/>
+                            <constraint firstItem="LJ3-8q-OGR" firstAttribute="top" secondItem="Ppn-09-N7L" secondAttribute="top" constant="100" id="iZl-OJ-gdI"/>
+                            <constraint firstItem="LJ3-8q-OGR" firstAttribute="leading" secondItem="Ppn-09-N7L" secondAttribute="leading" constant="10" id="mtC-wB-Wx5"/>
                             <constraint firstItem="MNd-tU-YTL" firstAttribute="top" secondItem="Ppn-09-N7L" secondAttribute="top" id="neV-od-QUB"/>
                             <constraint firstItem="MNd-tU-YTL" firstAttribute="trailing" secondItem="Ppn-09-N7L" secondAttribute="trailing" id="yGz-eC-8mY"/>
+                            <constraint firstItem="LJ3-8q-OGR" firstAttribute="bottom" secondItem="Ppn-09-N7L" secondAttribute="bottom" constant="-80" id="yzS-g1-mIU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ppn-09-N7L"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Trading" id="J5M-PO-Vue"/>
+                    <connections>
+                        <outlet property="chartView" destination="LJ3-8q-OGR" id="qeL-Fm-85Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2M2-8V-hLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
