@@ -51,9 +51,13 @@ extension CCMWebSocketClient: WebSocketDelegate {
     }
     
     func websocketDidConnect(socket: WebSocketClient) {
-        subscribeToTopics(CCMAPIConstant.tickersQuery)
-        subscribeToTopics(CCMAPIConstant.booksQuery)
-        subscribeToTopics(CCMAPIConstant.tradesQuery)
+        subscribeToTopics(CCMAPIConstant().tickersQuery)
+        subscribeToTopics(CCMAPIConstant().booksQuery)
+        subscribeToTopics(CCMAPIConstant().tradesQuery)
+    }
+    
+    func reSubscribeTopics(type: CurrencyType) {
+        NotificationCenter.default.post(name: NSNotification.Name.clearCurrentSubscription, object: self, userInfo: ["type": type.rawValue])
     }
     
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {

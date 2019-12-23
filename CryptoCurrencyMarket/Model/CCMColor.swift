@@ -21,4 +21,8 @@ struct CCMColor {
     static func yellowColor() -> UIColor {
         return UIColor().hexColor(hex: "fae846")
     }
+    
+    static func darkColor() -> UIColor {
+        return UIColor().hexColor(hex: "1d212f")
+    }
 }

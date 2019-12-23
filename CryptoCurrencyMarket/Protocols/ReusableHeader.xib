@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReusableHeader" customModule="CryptoCurrencyMarket" customModuleProvider="target">
             <connections>
-                <outlet property="title" destination="UnD-Zd-YFR" id="TTW-kZ-s5l"/>
+                <outlet property="title" destination="UnD-Zd-YFR" id="Ko2-Nn-CeA"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

@@ -11,11 +11,13 @@ import UIKit
 
 class BookViewModel: NSObject {
     
+    var type: CurrencyType = CurrencyType.BTCUSD
     @objc dynamic var model = [Book]()
     
     override init() {
         super .init()
         NotificationCenter.default.addObserver(self, selector: #selector(valueDidUpdate(_:)), name: .bookDidUpdate, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(valueWillClear(_:)), name: .clearCurrentSubscription, object: nil)
     }
     
     @objc func valueDidUpdate(_ notification: Notification) {
@@ -24,6 +26,14 @@ class BookViewModel: NSObject {
             model = model.filter({ $0.price != obj.price })
             model.append(book)
             model = model.sorted(by: { $0.price > $1.price })
+        }
+    }
+    
+    @objc func valueWillClear(_ notification: Notification) {
+        if let userInfo = notification.userInfo, let typeString = userInfo["type"] as? String {
+            if CurrencyType(rawValue: typeString) != self.type {
+                model.removeAll()
+            }
         }
     }
     

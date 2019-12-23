@@ -10,11 +10,14 @@ import Foundation
 import UIKit
 
 class TickerViewModel: NSObject {
+    
+    var type: CurrencyType = CurrencyType.BTCUSD
     @objc dynamic var model = Ticker(ticker: nil)
     
     override init() {
         super .init()
         NotificationCenter.default.addObserver(self, selector: #selector(valueDidUpdate(_:)), name: .tickerDidUpdate, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(valueWillClear(_:)), name: .clearCurrentSubscription, object: nil)
     }
     
     func updateModel(obj: CCMSubscribedUpdateTickers) {
@@ -31,6 +34,14 @@ class TickerViewModel: NSObject {
     @objc func valueDidUpdate(_ notification: Notification) {
         if let obj = notification.object as? CCMSubscribedUpdateTickers {
             self.model = Ticker(ticker: obj)
+        }
+    }
+    
+    @objc func valueWillClear(_ notification: Notification) {
+        if let userInfo = notification.userInfo, let typeString = userInfo["type"] as? String {
+            if CurrencyType(rawValue: typeString) != self.type {
+                model = Ticker(ticker: nil)
+            }
         }
     }
 }

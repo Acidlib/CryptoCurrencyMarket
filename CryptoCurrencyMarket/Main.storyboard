@@ -273,7 +273,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7UE-My-yGf" customClass="ReusableHeader" customModule="CryptoCurrencyMarket" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="80"/>
-                                <color key="backgroundColor" red="0.1124119646" green="0.13064590770000001" blue="0.18436285620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.11372549019607843" green="0.12941176470588234" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="5ae-qe-psk"/>
                                 </constraints>

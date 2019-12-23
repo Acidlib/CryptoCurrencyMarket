@@ -12,11 +12,13 @@ import Charts
 
 class TradeViewModel: NSObject {
     
+    var type: CurrencyType = CurrencyType.BTCUSD
     @objc dynamic var model = [Trade]()
     
     override init() {
         super .init()
         NotificationCenter.default.addObserver(self, selector: #selector(valueDidUpdate(_:)), name: .tradeDidUpdate, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(valueWillClear(_:)), name: .clearCurrentSubscription, object: nil)
     }
     
     @objc func valueDidUpdate(_ notification: Notification) {
@@ -25,6 +27,14 @@ class TradeViewModel: NSObject {
             print("update: \(NSDate())")
             model.append(trade)
             model = model.sorted(by: { $0.mts.timeIntervalSince1970 < $1.mts.timeIntervalSince1970 })
+        }
+    }
+    
+    @objc func valueWillClear(_ notification: Notification) {
+        if let userInfo = notification.userInfo, let typeString = userInfo["type"] as? String {
+            if CurrencyType(rawValue: typeString) != self.type {
+                model.removeAll()
+            }
         }
     }
     
