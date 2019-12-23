@@ -73,8 +73,8 @@ struct CCMSubscribedUpdateTickers {
     var dailyChangeRelative: Double
     var lastPrice: Double
     var volume: Double
-    var high: Int
-    var low: Int
+    var high: Double
+    var low: Double
 
     init?(array: [NSNumber]) {
         if array.count == 10 {
@@ -86,8 +86,8 @@ struct CCMSubscribedUpdateTickers {
             self.dailyChangeRelative = array[5].doubleValue
             self.lastPrice = array[6].doubleValue
             self.volume = array[7].doubleValue
-            self.high = array[8].intValue
-            self.low = array[9].intValue
+            self.high = array[8].doubleValue
+            self.low = array[9].doubleValue
         } else {
             return nil
         }

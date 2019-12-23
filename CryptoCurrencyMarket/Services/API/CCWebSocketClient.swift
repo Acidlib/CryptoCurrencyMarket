@@ -14,6 +14,7 @@ class CCMWebSocketClient: CCMAPIRequest {
     static let shared = CCMWebSocketClient()
     private var channelList: [Int: String] = [:]
     private let socket: WebSocket = WebSocket(url: URL(string: "wss://api-pub.bitfinex.com/ws/2")!)
+    private var type: CurrencyType = CurrencyType.BTCUSD
     
     init() {
         defer {
@@ -58,6 +59,10 @@ extension CCMWebSocketClient: WebSocketDelegate {
     
     func reSubscribeTopics(type: CurrencyType) {
         NotificationCenter.default.post(name: NSNotification.Name.clearCurrentSubscription, object: self, userInfo: ["type": type.rawValue])
+        channelList.removeAll()
+        subscribeToTopics(CCMAPIConstant(type).tickersQuery)
+        subscribeToTopics(CCMAPIConstant(type).booksQuery)
+        subscribeToTopics(CCMAPIConstant(type).tradesQuery)
     }
     
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {

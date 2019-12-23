@@ -24,7 +24,6 @@ class TradeViewModel: NSObject {
     @objc func valueDidUpdate(_ notification: Notification) {
         if let obj = notification.object as? CCMSubscribedUpdateTrades {
             let trade = Trade(trade: obj)
-            print("update: \(NSDate())")
             model.append(trade)
             model = model.sorted(by: { $0.mts.timeIntervalSince1970 < $1.mts.timeIntervalSince1970 })
         }

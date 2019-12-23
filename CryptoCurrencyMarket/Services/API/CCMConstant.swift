@@ -19,7 +19,7 @@ struct CCMAPIConstant {
     var booksQuery: [String: String]
     var tradesQuery: [String: String]
     
-    init(type: CurrencyType=CurrencyType.BTCUSD) {
+    init(_ type: CurrencyType=CurrencyType.BTCUSD) {
         tickersQuery = ["event": "subscribe", "channel": "ticker", "symbol": type.rawValue]
         booksQuery = ["event": "subscribe", "channel": "book", "symbol": type.rawValue]
         tradesQuery = ["event": "subscribe", "channel": "trades", "symbol": type.rawValue]
