@@ -26,6 +26,14 @@
                             <color key="textColor" red="1" green="0.9156742309" blue="0.23984834059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipsis.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2lH-bV-JSU">
+                            <rect key="frame" x="374" y="33.5" width="30" height="49"/>
+                            <color key="tintColor" red="1" green="0.9156742309" blue="0.23984834059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="3Cs-vE-znq"/>
+                                <constraint firstAttribute="width" constant="30" id="3n6-P0-aB5"/>
+                            </constraints>
+                        </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxU-IO-xBs">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                             <connections>
@@ -38,9 +46,11 @@
                         <constraint firstItem="UnD-Zd-YFR" firstAttribute="leading" secondItem="c2L-7p-moS" secondAttribute="leading" constant="10" id="CzG-hd-WL4"/>
                         <constraint firstItem="GxU-IO-xBs" firstAttribute="top" secondItem="c2L-7p-moS" secondAttribute="top" id="Lfx-6i-nCi"/>
                         <constraint firstAttribute="trailing" secondItem="UnD-Zd-YFR" secondAttribute="trailing" constant="10" id="O45-Lb-BPt"/>
+                        <constraint firstItem="2lH-bV-JSU" firstAttribute="centerY" secondItem="UnD-Zd-YFR" secondAttribute="centerY" id="Ojg-wf-DFg"/>
                         <constraint firstAttribute="bottom" secondItem="UnD-Zd-YFR" secondAttribute="bottom" id="cAm-4F-m8Y"/>
                         <constraint firstAttribute="height" constant="80" id="l0s-pX-UNJ"/>
                         <constraint firstAttribute="trailing" secondItem="GxU-IO-xBs" secondAttribute="trailing" id="lDg-l1-CBB"/>
+                        <constraint firstItem="2lH-bV-JSU" firstAttribute="trailing" secondItem="UnD-Zd-YFR" secondAttribute="trailing" id="mpv-f3-NKZ"/>
                         <constraint firstItem="GxU-IO-xBs" firstAttribute="leading" secondItem="c2L-7p-moS" secondAttribute="leading" id="pVM-Me-wEQ"/>
                         <constraint firstAttribute="bottom" secondItem="GxU-IO-xBs" secondAttribute="bottom" id="uED-qe-6wO"/>
                     </constraints>
@@ -56,4 +66,7 @@
             <point key="canvasLocation" x="223.18840579710147" y="-54.241071428571423"/>
         </view>
     </objects>
+    <resources>
+        <image name="ellipsis.circle" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
