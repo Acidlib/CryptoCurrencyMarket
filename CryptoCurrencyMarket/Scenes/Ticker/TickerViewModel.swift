@@ -39,7 +39,8 @@ class TickerViewModel: NSObject {
     
     @objc func valueWillClear(_ notification: Notification) {
         if let userInfo = notification.userInfo, let typeString = userInfo["type"] as? String {
-            if CurrencyType(rawValue: typeString) != self.type {
+            if let t = CurrencyType(rawValue: typeString), t != self.type {
+                self.type = t
                 model = Ticker(ticker: nil)
             }
         }

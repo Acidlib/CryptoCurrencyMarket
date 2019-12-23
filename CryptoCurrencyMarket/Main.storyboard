@@ -38,7 +38,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EaG-yW-N6n">
                                 <rect key="frame" x="10" y="144" width="394" height="580"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-UJ-CSC" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-UJ-CSC">
                                         <rect key="frame" x="0.0" y="0.0" width="197" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptC-Ml-pS0">
@@ -66,7 +66,7 @@
                                             <constraint firstItem="ptC-Ml-pS0" firstAttribute="top" secondItem="6eI-UJ-CSC" secondAttribute="top" constant="10" id="sIJ-no-DMh"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHF-pd-AdL" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHF-pd-AdL">
                                         <rect key="frame" x="0.0" y="160" width="197" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd7-Z3-mRb">
@@ -94,7 +94,7 @@
                                             <constraint firstItem="VnW-RQ-nkd" firstAttribute="top" secondItem="yHF-pd-AdL" secondAttribute="top" constant="27" id="wFU-fl-RFZ"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-r0-Yln" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-r0-Yln">
                                         <rect key="frame" x="198" y="1" width="197" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bid" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy4-Y1-qDx">
@@ -122,7 +122,7 @@
                                             <constraint firstItem="oSg-hu-f4s" firstAttribute="leading" secondItem="ncM-r0-Yln" secondAttribute="leading" constant="10" id="nzw-pH-adw"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-Wu-ezG" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-Wu-ezG">
                                         <rect key="frame" x="197" y="160" width="197" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWz-nR-Isf">
@@ -171,7 +171,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bW-xM-yJk" customClass="ElementView" customModule="CryptoCurrencyMarket" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bW-xM-yJk">
                                         <rect key="frame" x="0.0" y="280" width="130" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yne-nu-5io">

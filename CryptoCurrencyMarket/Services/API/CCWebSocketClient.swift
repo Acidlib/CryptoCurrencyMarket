@@ -12,7 +12,7 @@ import Starscream
 class CCMWebSocketClient: CCMAPIRequest {
 
     static let shared = CCMWebSocketClient()
-    private var channelList: [Int: String] = [:]
+    private var channelList: [Int: [CurrencyType: String]] = [:]
     private let socket: WebSocket = WebSocket(url: URL(string: "wss://api-pub.bitfinex.com/ws/2")!)
     private var type: CurrencyType = CurrencyType.BTCUSD
     
@@ -47,8 +47,10 @@ extension CCMWebSocketClient: WebSocketDelegate {
     
     private func handleServiceResponse(_ dic: Dictionary<String, Any>) {
         if let subscribed = CCMQueryResponseService(json: dic) {
-            channelList[subscribed.channelId] = subscribed.channel
+            channelList[subscribed.channelId] = [type: subscribed.channel]
         }
+        print("channel -->", channelList.description)
+        print("")
     }
     
     func websocketDidConnect(socket: WebSocketClient) {
@@ -58,8 +60,8 @@ extension CCMWebSocketClient: WebSocketDelegate {
     }
     
     func reSubscribeTopics(type: CurrencyType) {
+        self.type = type
         NotificationCenter.default.post(name: NSNotification.Name.clearCurrentSubscription, object: self, userInfo: ["type": type.rawValue])
-        channelList.removeAll()
         subscribeToTopics(CCMAPIConstant(type).tickersQuery)
         subscribeToTopics(CCMAPIConstant(type).booksQuery)
         subscribeToTopics(CCMAPIConstant(type).tradesQuery)
@@ -76,9 +78,9 @@ extension CCMWebSocketClient: WebSocketDelegate {
                 handleServiceResponse(json)
             } else if let jsonArray = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? Array<Any> {
                 if let chanId = jsonArray[0] as? Int,
-                    let chanelName = channelList[chanId],
+                    let channelName = channelList[chanId]![type],
                     jsonArray.count > 1 {
-                    switch chanelName {
+                    switch channelName {
                     case "ticker":
                         if let bodyArray = jsonArray[1] as? Array<NSNumber>, let ticker = CCMSubscribedUpdateTickers(array: bodyArray) {
                             NotificationCenter.default.post(name: .tickerDidUpdate, object: ticker)
