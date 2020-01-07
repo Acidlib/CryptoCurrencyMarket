@@ -22,7 +22,7 @@ class BookViewModel: NSObject {
     
     @objc func valueDidUpdate(_ notification: Notification) {
         if let obj = notification.object as? CCMSubscribedUpdateBooks {
-            let book = Book(book: obj)
+            let book = Book(obj)
             model = model.filter({ $0.price != obj.price })
             model.append(book)
             model = model.sorted(by: { $0.price > $1.price })

@@ -8,13 +8,20 @@
 
 import Foundation
 import Starscream
+import RxSwift
+import RxCocoa
 
 class CCMWebSocketClient: CCMAPIRequest {
 
     static let shared = CCMWebSocketClient()
+    let disposeBag = DisposeBag()
     private var channelList: [Int: [CurrencyType: String]] = [:]
     private let socket: WebSocket = WebSocket(url: URL(string: "wss://api-pub.bitfinex.com/ws/2")!)
     private var type: CurrencyType = CurrencyType.BTCUSD
+    
+    let subTicker = PublishRelay<Ticker>()
+    let subTrade = PublishSubject<Trade>()
+    let subBook = PublishSubject<Book>()
     
     init() {
         defer {
@@ -49,8 +56,6 @@ extension CCMWebSocketClient: WebSocketDelegate {
         if let subscribed = CCMQueryResponseService(json: dic) {
             channelList[subscribed.channelId] = [type: subscribed.channel]
         }
-        print("channel -->", channelList.description)
-        print("")
     }
     
     func websocketDidConnect(socket: WebSocketClient) {
@@ -83,18 +88,18 @@ extension CCMWebSocketClient: WebSocketDelegate {
                     switch channelName {
                     case "ticker":
                         if let bodyArray = jsonArray[1] as? Array<NSNumber>, let ticker = CCMSubscribedUpdateTickers(array: bodyArray) {
-                            NotificationCenter.default.post(name: .tickerDidUpdate, object: ticker)
+                            subTicker.accept(Ticker(ticker))
                         }
                     case "trades":
                         if jsonArray.count > 2, let bodyArray = jsonArray[2] as? Array<NSNumber>, let trades = CCMSubscribedUpdateTrades(array: bodyArray) {
-                            NotificationCenter.default.post(name: .tradeDidUpdate, object: trades)
+                            subTrade.onNext(Trade(trades))
+//                            subTrade.accept(Trade(trades))
                         }
                     case "book":
                         if let bodyArray = jsonArray[1] as? Array<NSNumber>, let book = CCMSubscribedUpdateBooks(array: bodyArray) {
-                            NotificationCenter.default.post(name: .bookDidUpdate, object: book)
                         }
                     default:
-                        print("")
+                        print("undefined channel name: \(channelName)")
                     }
                 }
             } else {

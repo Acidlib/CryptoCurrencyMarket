@@ -8,42 +8,66 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
 class TickerViewModel: NSObject {
     
     var type: CurrencyType = CurrencyType.BTCUSD
-    @objc dynamic var model = Ticker(ticker: nil)
+    let disposeBag = DisposeBag()
+    var model = Ticker(nil)
     
     override init() {
         super .init()
-        NotificationCenter.default.addObserver(self, selector: #selector(valueDidUpdate(_:)), name: .tickerDidUpdate, object: nil)
+        CCMWebSocketClient.shared.subTicker.subscribe({ [weak self] event in
+            if let ticker = event.element {
+                self?.model = ticker
+            }
+        }).disposed(by: disposeBag)
+        
         NotificationCenter.default.addObserver(self, selector: #selector(valueWillClear(_:)), name: .clearCurrentSubscription, object: nil)
-    }
-    
-    func updateModel(obj: CCMSubscribedUpdateTickers) {
-        self.model.high = "\(obj.high)"
-        self.model.low = "\(obj.low)"
-        self.model.bid = "\(obj.bid)"
-        self.model.ask = "\(obj.ask)"
-        self.model.currentPrice = String(format: "%.2f", obj.lastPrice)
-        self.model.dailyChange = String(format: "%@%.2f", obj.dailyChange > 0 ? "+" : "", obj.dailyChange)
-        self.model.dailyChangeRelative = String(format: "%@%.2f %%", obj.dailyChange > 0 ? "+" : "", obj.dailyChangeRelative*100)
-        self.model.volume = String(format: "%.2f", obj.volume)
-    }
-    
-    @objc func valueDidUpdate(_ notification: Notification) {
-        if let obj = notification.object as? CCMSubscribedUpdateTickers {
-            self.model = Ticker(ticker: obj)
-        }
     }
     
     @objc func valueWillClear(_ notification: Notification) {
         if let userInfo = notification.userInfo, let typeString = userInfo["type"] as? String {
             if let t = CurrencyType(rawValue: typeString), t != self.type {
                 self.type = t
-                model = Ticker(ticker: nil)
+                model = Ticker(nil)
             }
         }
     }
 }
 
+extension TickerViewModel {
+    var high: Observable<String> {
+        return Observable<String>.just(model.high)
+    }
+    
+    var low: Observable<String> {
+        return Observable<String>.just(model.low)
+    }
+    
+    var bid: Observable<String> {
+        return Observable<String>.just(model.bid)
+    }
+    
+    var ask: Observable<String> {
+        return Observable<String>.just(model.ask)
+    }
+    
+    var currentPrice: Observable<String> {
+        return Observable<String>.just(model.currentPrice)
+    }
+    
+    var dailyChange: Observable<NSAttributedString> {
+        return Observable<NSAttributedString>.just(model.dailyChange)
+    }
+    
+    var dailyChangeRelative: Observable<NSAttributedString> {
+        return Observable<NSAttributedString>.just(model.dailyChangeRelative)
+    }
+
+    var volume: Observable<String> {
+        return Observable<String>.just(model.volume)
+    }
+}

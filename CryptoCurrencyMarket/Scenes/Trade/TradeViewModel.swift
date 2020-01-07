@@ -9,24 +9,24 @@
 import Foundation
 import UIKit
 import Charts
+import RxSwift
 
 class TradeViewModel: NSObject {
     
     var type: CurrencyType = CurrencyType.BTCUSD
+    let disposeBag = DisposeBag()
     @objc dynamic var model = [Trade]()
     
     override init() {
         super .init()
-        NotificationCenter.default.addObserver(self, selector: #selector(valueDidUpdate(_:)), name: .tradeDidUpdate, object: nil)
+        CCMWebSocketClient.shared.subTrade.subscribe({ [weak self] event in
+            if let trade = event.element {
+                self?.model.append(trade)
+                self?.model = (self?.model.sorted(by: { $0.mts.timeIntervalSince1970 < $1.mts.timeIntervalSince1970 }))!
+            }
+        }).disposed(by: disposeBag)
+
         NotificationCenter.default.addObserver(self, selector: #selector(valueWillClear(_:)), name: .clearCurrentSubscription, object: nil)
-    }
-    
-    @objc func valueDidUpdate(_ notification: Notification) {
-        if let obj = notification.object as? CCMSubscribedUpdateTrades {
-            let trade = Trade(trade: obj)
-            model.append(trade)
-            model = model.sorted(by: { $0.mts.timeIntervalSince1970 < $1.mts.timeIntervalSince1970 })
-        }
     }
     
     @objc func valueWillClear(_ notification: Notification) {
@@ -95,5 +95,16 @@ class TradeViewModel: NSObject {
 
         data.groupBars(fromX: 0, groupSpace: groupSpace, barSpace: barSpace)
         return data
+    }
+}
+
+
+extension TradeViewModel {
+    var trades: Observable<[Trade]> {
+        return Observable<[Trade]>.just(model)
+    }
+    
+    var lastMTS: Observable<Date> {
+        return Observable<Date>.just((model.last?.mts) ?? Date())
     }
 }

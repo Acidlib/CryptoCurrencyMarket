@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class TickerViewController: UIViewController {
     @IBOutlet weak var high: UILabel!
@@ -19,37 +21,21 @@ class TickerViewController: UIViewController {
     @IBOutlet weak var volume: UILabel!
     
     var tickerViewModel = TickerViewModel()
-    private var tickerObserver: NSObjectProtocol?
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         observeViewModel()
-        updateUIElements()
     }
     
     func observeViewModel() {
-        self.tickerObserver = tickerViewModel.observe(\.model, options: [.initial, .new, .old], changeHandler: { (viewModel, change) in
-            self.updateUIElements()
-        })
-    }
-    
-    func updateUIElements() {
-        DispatchQueue.main.async {
-            self.high.text = self.tickerViewModel.model.high
-            self.low.text = self.tickerViewModel.model.low
-            self.bid.text = self.tickerViewModel.model.bid
-            self.ask.text = self.tickerViewModel.model.ask
-            self.currentPrice.text = self.tickerViewModel.model.currentPrice
-            self.dailyChange.text = self.tickerViewModel.model.dailyChange
-            self.dailyChangeRelative.text = self.tickerViewModel.model.dailyChangeRelative
-            self.volume.text = self.tickerViewModel.model.volume
-            if self.dailyChange.text!.range(of:"+") != nil {
-                self.dailyChangeRelative.textColor = CCMColor.greenColor()
-                self.dailyChange.textColor = CCMColor.greenColor()
-            } else {
-                self.dailyChangeRelative.textColor = CCMColor.redColor()
-                self.dailyChange.textColor = CCMColor.redColor()
-            }
-        }
+        self.tickerViewModel.high.bind(to: self.high.rx.text).disposed(by: disposeBag)
+        self.tickerViewModel.low.bind(to: self.low.rx.text).disposed(by: disposeBag)
+        self.tickerViewModel.bid.bind(to: self.bid.rx.text).disposed(by: disposeBag)
+        self.tickerViewModel.ask.bind(to: self.ask.rx.text).disposed(by: disposeBag)
+        self.tickerViewModel.currentPrice.bind(to: self.currentPrice.rx.text).disposed(by: disposeBag)
+        self.tickerViewModel.volume.bind(to: self.volume.rx.text).disposed(by: disposeBag)
+        self.tickerViewModel.dailyChange.bind(to: self.dailyChange.rx.attributedText).disposed(by: disposeBag)
+        self.tickerViewModel.dailyChangeRelative.bind(to: self.dailyChangeRelative.rx.attributedText).disposed(by: disposeBag)
     }
 }

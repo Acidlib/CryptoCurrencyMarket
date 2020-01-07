@@ -14,7 +14,7 @@ class Book: NSObject {
     var amount: Double = 0
     var count: Int = 0
     
-    init(book: CCMSubscribedUpdateBooks) {
+    init(_ book: CCMSubscribedUpdateBooks) {
         price = book.price
         amount = book.amount
         count = book.count

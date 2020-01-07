@@ -16,20 +16,20 @@ class Ticker: NSObject {
     var bid: String = "..."
     var ask: String = "..."
     var currentPrice: String = "..."
-    var dailyChange: String = "..."
-    var dailyChangeRelative: String = "..."
+    var dailyChange: NSAttributedString = NSAttributedString(string:"...")
+    var dailyChangeRelative: NSAttributedString = NSAttributedString(string:"...")
     var volume: String = "..."
     
-    init(ticker: CCMSubscribedUpdateTickers?) {
+    init(_ ticker: CCMSubscribedUpdateTickers?) {
         if let ticker = ticker {
-            high = "\(ticker.high)"
-            low = "\(ticker.low)"
-            bid = "\(ticker.bid)"
-            ask = "\(ticker.ask)"
+            high = String(format: "%.2f", ticker.high)
+            low = String(format: "%.2f", ticker.low)
+            bid = String(format: "%.2f", ticker.bid)
+            ask = String(format: "%.2f", ticker.ask)
             currentPrice = String(format: "%.2f", ticker.lastPrice)
-            dailyChange = String(format: "%@%.2f", ticker.dailyChange > 0 ? "+" : "", ticker.dailyChange)
-            dailyChangeRelative = String(format: "%@%.2f %%", ticker.dailyChange > 0 ? "+" : "", ticker.dailyChangeRelative*100)
             volume = String(format: "%.2f", ticker.volume)
+            dailyChange = NSAttributedString(string: String(format: "%@%.2f", ticker.dailyChange > 0 ? "+" : "", ticker.dailyChange), attributes: [NSAttributedString.Key.foregroundColor: ticker.dailyChange > 0 ? CCMColor.greenColor() : CCMColor.redColor()])
+            dailyChangeRelative = NSAttributedString(string: String(format: "%@%.2f", ticker.dailyChangeRelative > 0 ? "+" : "", ticker.dailyChangeRelative), attributes: [NSAttributedString.Key.foregroundColor: ticker.dailyChangeRelative > 0 ? CCMColor.greenColor() : CCMColor.redColor()])
         }
     }
 }

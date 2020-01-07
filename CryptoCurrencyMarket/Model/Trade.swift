@@ -14,7 +14,7 @@ class Trade: NSObject {
     var mts: Date
     var amount: Double = 0
         
-    init(trade: CCMSubscribedUpdateTrades) {
+    init(_ trade: CCMSubscribedUpdateTrades) {
         price = trade.price
         mts = Date(timeIntervalSince1970: TimeInterval(trade.mts/1000))
         amount = trade.amount

@@ -9,7 +9,6 @@
 import UIKit
 
 protocol CCMAPIRequest {
-    //var apiParameters: [String: Any] { get }
 }
 
 extension CCMAPIRequest {
